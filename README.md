@@ -33,3 +33,12 @@ there
 # 1.3 Event Loop  
 ### Tìm hiểu về Event loop, và giải thích lại đoạn code trên theo ý hiểu của em. Reference:  
 https://www.youtube.com/watch?v=8aGhZQkoFbQ  
+Hàm setTimeout bị hiển thị sau là vì sau khi hết thời gian chờ là 0s thì nó sẽ bị đẩy vào hàng chờ, và đợi hệ thống chạy hết các thông báo khác thì hàm setTimeout mới được hiển thị.  
+# 1.4 Callbacks  
+### Tìm hiểu về callback funtions trong JS (https://www.sitepoint.com/callbacks-javascript/)  
+### Người ta nói callback functions đóng gói tính liên tục của chương trình. Theo em chương trình dưới sẽ được chạy liên tục ra sao? Ví dụ (1) => (2) => (3)  
+// (1)  
+setTimeout(function () {  
+  // (2)  
+}, 1000);  
+// (3)  
