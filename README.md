@@ -43,7 +43,7 @@ setTimeout(function () {
 }, 1000);  
 // (3)  
 Thứ tự chạy là 1 -> 3 -> 2  
-Callbacks là một chức năng được thực hiện sau khi chức năng khác thực hiện xong.  
+Callbacks là truyền 1 đoạn code A (hàm A) vào trong hàm B, khi nào hàm A được hàm B gọi thì lúc ấy gọi là callbacks.
 
 ## 1.4.1 Nested/Chained Callbacks  
 ### Set đoạn code sau, khi người dùng click vào btn thì điều gì xảy ra?  
@@ -59,5 +59,25 @@ btn.addEventListener('click', function () {
 0 ->1 ->3 ->2  
 
 # 1.5 Promises  
+promises là xử lí một kết quả cụ thể(trong bất đồng bộ) có thể là thành công hay thất bại.  
+Cú pháp 1 promises:  
+ var promises= new Promises(function(resolve, reject){...})  
+### What is a future value ?  
+giá trị tương lai mình đã định sẵn là resolve, reject.  
+### Promise value ?  
+
+### Promise Events ?  
+
+### How to get Promise value?  
+
+### How to handle error in Promise ?  
+
+### How to chain Promises ?  
+
+### Promise.all  
+
+### Promise.race  
+
+### finally  
 
 
