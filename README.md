@@ -6,7 +6,7 @@ sync là việc thực thi lần lượt các dòng lệnh từ trên xuống d�
 ### Async code (code bất đồng bộ) là gì ?  
 Asyns là việc thực thi các dòng lệnh không phải đợi lần lượt từ trên xuống dưới.  
 ### Theo em JavaScript là ngôn ngữ đồng bộ hay bất đồng bộ.  
-Javascript là ngôn ngữ bất đồng bộ.  
+Javascript là ngôn ngữ đồng bộ.  
 # 1.2 setTimeout  
 ### Cho hàm setTimeout có định nghĩa như sau:  
 https://www.w3schools.com/jsref/met_win_settimeout.asp  
@@ -29,6 +29,7 @@ Hi
 Hi again  
 there  
 =>setTimeout sẽ cho ra kết quả hiện thị sau hàm hiển thị bình thường mặc dù hẹn giờ là 0s.  
+Vì hiển thị hàm đồng bộ trước, bất đồng bộ sau, hàm setTimeout là bất đồng bộ(setTimeout là của trình duyệt).    
 
 # 1.3 Event Loop  
 ### Tìm hiểu về Event loop, và giải thích lại đoạn code trên theo ý hiểu của em. Reference:  
