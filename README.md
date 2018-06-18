@@ -42,3 +42,22 @@ setTimeout(function () {
   // (2)  
 }, 1000);  
 // (3)  
+Thứ tự chạy là 1 -> 3 -> 2  
+Callbacks là một chức năng được thực hiện sau khi chức năng khác thực hiện xong.  
+
+## 1.4.1 Nested/Chained Callbacks  
+### Set đoạn code sau, khi người dùng click vào btn thì điều gì xảy ra?  
+// (0)  
+var btn = document.getElementById('btn');  
+btn.addEventListener('click', function () {  
+  // (1)  
+  setTimeout(function () {  
+    // (2)  
+  }, 1000);  
+  // (3)  
+});  
+0 ->1 ->3 ->2  
+
+# 1.5 Promises  
+
+
