@@ -13,17 +13,21 @@ https://www.w3schools.com/jsref/met_win_settimeout.asp
 setTimeout là hẹn giờ hiển thị thông báo.  
 Cú pháp: setTimeout(function(){},số milliseconds)  
 ### Set đoạn code sau, hãy mô tả chính xác những gì xảy ra và kết quả in ra là gì ?  
+```
 console.log('Hi');  
 setTimeout(function () {  
   console.log('there');  
 }, 1000);  
+```
 Đầu tiên sẽ hiện ra Hi, sau đó 1 giây thì hiện ra there ở dòng dưới.  
 ### How about this one, can you guess ?  
+```
 console.log('Hi');  
 setTimeout(function () {  
   console.log('there');  
 }, 0);  
 console.log('Hi again');  
+```
 Sẽ hiể thị ra:  
 Hi  
 Hi again  
@@ -38,16 +42,19 @@ Hàm setTimeout bị hiển thị sau là vì sau khi hết thời gian chờ l�
 # 1.4 Callbacks  
 ### Tìm hiểu về callback funtions trong JS (https://www.sitepoint.com/callbacks-javascript/)  
 ### Người ta nói callback functions đóng gói tính liên tục của chương trình. Theo em chương trình dưới sẽ được chạy liên tục ra sao? Ví dụ (1) => (2) => (3)  
+```
 // (1)  
 setTimeout(function () {  
   // (2)  
 }, 1000);  
 // (3)  
+```
 Thứ tự chạy là 1 -> 3 -> 2  
 Callbacks là truyền 1 đoạn code A (hàm A) vào trong hàm B, khi nào hàm A được hàm B gọi thì lúc ấy gọi là callbacks.
 
 ## 1.4.1 Nested/Chained Callbacks  
 ### Set đoạn code sau, khi người dùng click vào btn thì điều gì xảy ra?  
+```
 // (0)  
 var btn = document.getElementById('btn');  
 btn.addEventListener('click', function () {  
@@ -57,6 +64,7 @@ btn.addEventListener('click', function () {
   }, 1000);  
   // (3)  
 });  
+```
 0 ->1 ->3 ->2  
 
 # 1.5 Promises  
@@ -79,10 +87,12 @@ p.catch(function(reason) {
 ### How to chain Promises ?  
 ta có thể dùng hàm then để gọi liên tiếp các hàm trong chuỗi các function ra.  
 ví dụ:  
+```
 hamtong()  
 .then(function1(){});
 .then(function2(){});
 .then(function3(){});
+```
 ### Promise.all  
 
 ### Promise.race  
