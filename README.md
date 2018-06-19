@@ -72,9 +72,17 @@ giá trị tương lai mình đã định sẵn là resolve, reject.
 ### How to get Promise value?  
 
 ### How to handle error in Promise ?  
+dùng lệnh: p.catch(onRejected);  
 
+p.catch(function(reason) {  
+});  
 ### How to chain Promises ?  
-
+ta có thể dùng hàm then để gọi liên tiếp các hàm trong chuỗi các function ra.  
+ví dụ:  
+hamtong()  
+.then(function1(){});
+.then(function2(){});
+.then(function3(){});
 ### Promise.all  
 
 ### Promise.race  
